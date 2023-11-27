@@ -8,6 +8,7 @@ class AppColors {
   static const Color chipBackground = Color(0x14000000);
   static const Color tabBarIndicator = Color(0xFF068441);
   static const Color tabBarBackground = Colors.white;
+  static const Color tabBarDivider = Colors.transparent;
   //endregion
 
   //region::Text
