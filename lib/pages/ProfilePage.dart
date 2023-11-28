@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lab3/widgets/ProfileItemTitle.dart';
+import 'package:lab3/widgets/HorizontalCategoriesList.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -17,6 +18,7 @@ class _MyProfilePageState extends State<ProfilePage> {
             title: 'У вас подключено',
             subtitle: 'Подписки, автоплатежи и ',
             subtitle2: 'сервисы на которые вы подписались'),
+        HorizontalCategoriesList(),
         ProfileItemTitle(
           title: 'Тарифы и лимиты',
           subtitle: 'Для операций в Сбербанк Онлайн',

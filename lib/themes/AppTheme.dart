@@ -5,8 +5,6 @@ ThemeData lightTheme(BuildContext context) {
   return ThemeData.light().copyWith(
       colorScheme: ColorScheme.fromSeed(seedColor: AppColors.seed),
       useMaterial3: true,
-      primaryColorLight: AppColors.seed,
-      primaryColorDark: AppColors.seed,
       scaffoldBackgroundColor: AppColors.mainBackground,
       textTheme: const TextTheme(
         displayLarge: TextStyle(
@@ -23,7 +21,12 @@ ThemeData lightTheme(BuildContext context) {
             letterSpacing: -0.42,
             color: AppColors.subtitle,
             fontWeight: FontWeight.bold),
-
+        displaySmall: TextStyle(
+            fontFamily: 'SFProText',
+            fontSize: 16,
+            height: 0.08,
+            letterSpacing: -0.40,
+            fontWeight: FontWeight.normal),
         titleLarge: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 24,
@@ -31,6 +34,13 @@ ThemeData lightTheme(BuildContext context) {
             letterSpacing: -0.40,
             color: AppColors.title,
             fontWeight: FontWeight.bold),
+        titleMedium: TextStyle(
+            fontFamily: 'SFProText',
+            fontSize: 14,
+            height: 0.08,
+            letterSpacing: -0.40,
+            color: AppColors.title,
+            fontWeight: FontWeight.normal),
         bodyMedium: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 16,
@@ -38,10 +48,11 @@ ThemeData lightTheme(BuildContext context) {
             color: AppColors.title,
             letterSpacing: -0.40,
             fontWeight: FontWeight.normal),
-        displaySmall: TextStyle(
+        bodySmall: TextStyle(
             fontFamily: 'SFProText',
-            fontSize: 16,
+            fontSize: 14,
             height: 0.08,
+            color: AppColors.subtitle,
             letterSpacing: -0.40,
             fontWeight: FontWeight.normal),
       ),

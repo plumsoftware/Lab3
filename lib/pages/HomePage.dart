@@ -14,23 +14,20 @@ class _MyHomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: DefaultTabController(
-          length: 2,
-          initialIndex: 0,
-          child: NestedScrollView(
-            headerSliverBuilder:
-                (BuildContext context, bool innerBoxIsScrolled) {
-              return <Widget>[
-                const CustomSliverAppBar(),
-              ];
-            },
-            body: const TabBarView(
-              children: [
-                ProfilePage(),
-                SettingPage(),
-              ],
-            ),
+      body: DefaultTabController(
+        length: 2,
+        initialIndex: 0,
+        child: NestedScrollView(
+          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+            return <Widget>[
+              const CustomSliverAppBar(),
+            ];
+          },
+          body: const TabBarView(
+            children: [
+              ProfilePage(),
+              SettingPage(),
+            ],
           ),
         ),
       ),
