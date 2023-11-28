@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lab3/widgets/CustomSliverAppBar.dart';
-import 'package:lab3/pages/ProfilePage.dart';
 import 'package:lab3/pages/SettingsPage.dart';
+import 'package:lab3/pages/ProfilePage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,21 +10,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<HomePage> with SingleTickerProviderStateMixin{
-  late TabController _tabController;
-
-  @override
-  void initState() {
-    _tabController = TabController(length: 2, vsync: this, initialIndex: 0);
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
-  }
-
+class _MyHomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,17 +19,16 @@ class _MyHomePageState extends State<HomePage> with SingleTickerProviderStateMix
           length: 2,
           initialIndex: 0,
           child: NestedScrollView(
-            headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+            headerSliverBuilder:
+                (BuildContext context, bool innerBoxIsScrolled) {
               return <Widget>[
                 const CustomSliverAppBar(),
               ];
             },
-            body: TabBarView(
-              controller: _tabController,
-              children: const [
+            body: const TabBarView(
+              children: [
                 ProfilePage(),
-                ProfilePage(),
-                // SettingsPage(),
+                SettingPage(),
               ],
             ),
           ),

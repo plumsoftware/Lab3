@@ -2,10 +2,14 @@ import 'package:flutter/material.dart';
 
 class ProfileItemTitle extends StatelessWidget {
   const ProfileItemTitle(
-      {super.key, required this.title, required this.subtitle});
+      {super.key,
+      required this.title,
+      required this.subtitle,
+      required this.subtitle2});
 
   final String title;
   final String subtitle;
+  final String subtitle2;
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +33,16 @@ class ProfileItemTitle extends StatelessWidget {
             style: Theme.of(context).textTheme.displayMedium,
             softWrap: true,
           ),
+          if (subtitle2.isNotEmpty)
+            const SizedBox(height: 8),
+            Text(
+              textHeightBehavior: const TextHeightBehavior(
+                  applyHeightToFirstAscent: false,
+                  applyHeightToLastDescent: true),
+              subtitle2,
+              style: Theme.of(context).textTheme.displayMedium,
+              softWrap: true,
+            ),
         ],
       ),
     );

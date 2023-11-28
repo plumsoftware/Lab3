@@ -14,12 +14,13 @@ class _MyProfilePageState extends State<ProfilePage> {
     return ListView(
       children: const [
         ProfileItemTitle(
-          title: 'У вас подключено',
-          subtitle: 'Подписки, автоплатежи и сервисы на которые вы подписались',
-        ),
+            title: 'У вас подключено',
+            subtitle: 'Подписки, автоплатежи и ',
+            subtitle2: 'сервисы на которые вы подписались'),
         ProfileItemTitle(
           title: 'Тарифы и лимиты',
           subtitle: 'Для операций в Сбербанк Онлайн',
+          subtitle2: '',
         ),
       ],
     );
