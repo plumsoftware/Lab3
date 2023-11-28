@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color seed = Color.fromARGB(1, 8, 166, 82);
+  static const Color seed = Color.fromARGB(255, 8, 166, 82);
 
   //region::Widgets
   static const Color mainBackground = Color(0xFFFAFAFA);
