@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lab3/themes/AppTheme.dart';
-import 'package:lab3/widgets/CustomSliverAppBar.dart';
+import 'package:lab3/pages/HomePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,49 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: lightTheme(context),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: DefaultTabController(
-        length: 2,
-        initialIndex: 0,
-        child: NestedScrollView(
-          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-            return <Widget>[
-              const CustomSliverAppBar(),
-            ];
-          },
-          body: const TabBarView(
-            children: [
-              Text('Tab 1 content'),
-              Text('Tab 2 content'),
-            ],
-          ),
-        ),
-      ),
+      home: const HomePage(),
     );
   }
 }

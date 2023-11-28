@@ -11,11 +11,19 @@ ThemeData lightTheme(BuildContext context) {
       textTheme: const TextTheme(
         displayLarge: TextStyle(
             fontFamily: 'SFProText',
-            fontSize: 16,
+            fontSize: 20,
             height: 0.08,
-            letterSpacing: -0.40,
+            letterSpacing: -0.70,
             color: AppColors.title,
             fontWeight: FontWeight.bold),
+        displayMedium: TextStyle(
+            fontFamily: 'SFProText',
+            fontSize: 14,
+            height: 0.08,
+            letterSpacing: -0.42,
+            color: AppColors.subtitle,
+            fontWeight: FontWeight.bold),
+
         titleLarge: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 24,
