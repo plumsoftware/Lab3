@@ -25,6 +25,7 @@ ThemeData lightTheme(BuildContext context) {
             fontFamily: 'SFProText',
             fontSize: 16,
             height: 0.08,
+            color: AppColors.title,
             letterSpacing: -0.40,
             fontWeight: FontWeight.normal),
         titleLarge: TextStyle(

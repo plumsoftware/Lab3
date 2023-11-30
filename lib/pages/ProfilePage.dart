@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lab3/models/ActionModel.dart';
+import 'package:lab3/widgets/ActionItem.dart';
 import 'package:lab3/widgets/ProfileItemTitle.dart';
 import 'package:lab3/widgets/HorizontalCategoriesList.dart';
 
@@ -24,6 +26,33 @@ class _MyProfilePageState extends State<ProfilePage> {
           subtitle: 'Для операций в Сбербанк Онлайн',
           subtitle2: '',
         ),
+        ActionItem(
+            actionModel: ActionModel(
+                imageName: "lib/assets/images/day_limit.png",
+                title: "Изменить суточный лимит",
+                subtitle: "На платежи и переводы")),
+        Padding(
+          padding: EdgeInsets.only(left: 64),
+          child: Divider(
+            height: 2,
+          ),
+        ),
+        ActionItem(
+            actionModel: ActionModel(
+                imageName: "lib/assets/images/transfer_outline.png",
+                title: "Переводы без комиссии",
+                subtitle: "Показать остаток в этом месяце")),
+        Padding(
+          padding: EdgeInsets.only(left: 64),
+          child: Divider(
+            height: 2,
+          ),
+        ),
+        ActionItem(
+            actionModel: ActionModel(
+                imageName: "lib/assets/images/transfer_info.png",
+                title: "Информация о тарифах и лимитах",
+                subtitle: "")),
       ],
     );
   }
