@@ -17,8 +17,6 @@ class CustomSliverAppBar extends StatelessWidget {
           onPressed: () {},
         ),
       ],
-      backgroundColor: Colors.transparent,
-      elevation: 0,
       leading: IconButton(
         icon: const Icon(Icons.close),
         color: AppColors.seed,
@@ -26,7 +24,7 @@ class CustomSliverAppBar extends StatelessWidget {
       ),
       centerTitle: true,
       flexibleSpace: FlexibleSpaceBar(
-        collapseMode: CollapseMode.parallax,
+        collapseMode: CollapseMode.pin,
         background: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

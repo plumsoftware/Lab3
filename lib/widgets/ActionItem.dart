@@ -46,7 +46,7 @@ class ActionItem extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 24),
+                const SizedBox(height: 4),
                 Wrap(
                   children: [
                     Text(
