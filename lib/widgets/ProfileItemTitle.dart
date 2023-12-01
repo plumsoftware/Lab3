@@ -20,7 +20,7 @@ class ProfileItemTitle extends StatelessWidget {
             style: Theme.of(context).textTheme.displayLarge,
             softWrap: true,
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 8),
           Text(
             textHeightBehavior: const TextHeightBehavior(
                 applyHeightToFirstAscent: false,

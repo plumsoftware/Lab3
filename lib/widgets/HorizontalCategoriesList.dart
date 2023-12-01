@@ -13,7 +13,7 @@ class HorizontalCategoriesList extends StatelessWidget {
       child: ListView.builder(
         padding: const EdgeInsets.all(16),
         scrollDirection: Axis.horizontal,
-        itemCount: 3,
+        itemCount: 1,
         itemBuilder: (context, index) {
           return const Row(
             children: [
@@ -24,7 +24,14 @@ class HorizontalCategoriesList extends StatelessWidget {
                       subtitle: 'Платёж 9 июля',
                       cost: '199 ₽',
                       period: 'месяц')),
-              SizedBox(width: 16)
+              SizedBox(width: 16),
+              CategoryItem(
+                  categoryModel: CategoryModel(
+                      imageName: 'lib/assets/images/transfer.png',
+                      title: 'Переводы',
+                      subtitle: 'Автопродление 21 августа',
+                      cost: '199 ₽',
+                      period: 'месяц')),
             ],
           );
         },

@@ -28,14 +28,14 @@ class ActionItem extends StatelessWidget {
             width: 32,
             height: 32,
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 16),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
                 const SizedBox(
-                  height: 18,
+                  height: 14,
                 ),
                 Wrap(
                   children: [
@@ -57,12 +57,12 @@ class ActionItem extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 18,
+                  height: 14,
                 ),
               ],
             ),
           ),
-          const SizedBox(height: 0),
+          const SizedBox(height: 16),
           IconButton(
             icon: const Icon(Icons.arrow_forward_ios_rounded),
             color: AppColors.subtitle,

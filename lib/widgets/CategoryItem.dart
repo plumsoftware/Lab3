@@ -20,7 +20,7 @@ class CategoryItem extends StatelessWidget {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
       child: Padding(
-        padding: const EdgeInsets.all(18),
+        padding: const EdgeInsets.all(14),
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -42,7 +42,7 @@ class CategoryItem extends StatelessWidget {
                   )
                 ],
               ),
-              const SizedBox(width: 16),
+              const SizedBox(height: 18),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,

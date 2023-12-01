@@ -12,6 +12,20 @@ ThemeData lightTheme(BuildContext context) {
         foregroundColor: Colors.white,
         backgroundColor: Colors.white,
       ),
+      chipTheme: ChipThemeData(
+        selectedColor: AppColors.chipBackground,
+        checkmarkColor: Colors.black,
+        backgroundColor: AppColors.chipBackground,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24),
+            side: const BorderSide(color: Colors.transparent)),
+        labelStyle: const TextStyle(
+            fontFamily: 'SFProText',
+            fontSize: 14,
+            letterSpacing: -0.42,
+            color: AppColors.title,
+            fontWeight: FontWeight.normal),
+      ),
       textTheme: const TextTheme(
         displayLarge: TextStyle(
             fontFamily: 'SFProText',
@@ -24,7 +38,7 @@ ThemeData lightTheme(BuildContext context) {
             fontSize: 14,
             letterSpacing: -0.42,
             color: AppColors.subtitle,
-            fontWeight: FontWeight.bold),
+            fontWeight: FontWeight.normal),
         displaySmall: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 16,
