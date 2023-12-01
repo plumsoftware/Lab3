@@ -6,53 +6,52 @@ ThemeData lightTheme(BuildContext context) {
       colorScheme: ColorScheme.fromSeed(seedColor: AppColors.seed),
       useMaterial3: true,
       scaffoldBackgroundColor: AppColors.mainBackground,
+      appBarTheme: const AppBarTheme(
+        elevation: 0,
+        surfaceTintColor: Colors.white,
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.white,
+      ),
       textTheme: const TextTheme(
         displayLarge: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 20,
-            height: 0.08,
             letterSpacing: -0.70,
             color: AppColors.title,
             fontWeight: FontWeight.bold),
         displayMedium: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 14,
-            height: 0.08,
             letterSpacing: -0.42,
             color: AppColors.subtitle,
             fontWeight: FontWeight.bold),
         displaySmall: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 16,
-            height: 0.08,
             color: AppColors.title,
             letterSpacing: -0.40,
             fontWeight: FontWeight.normal),
         titleLarge: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 24,
-            height: 0.08,
             letterSpacing: -0.40,
             color: AppColors.title,
             fontWeight: FontWeight.bold),
         titleMedium: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 14,
-            height: 0.08,
             letterSpacing: -0.40,
             color: AppColors.title,
             fontWeight: FontWeight.normal),
         bodyMedium: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 16,
-            height: 0.08,
             color: AppColors.title,
             letterSpacing: -0.40,
             fontWeight: FontWeight.normal),
         bodySmall: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 14,
-            height: 0.08,
             color: AppColors.subtitle,
             letterSpacing: -0.40,
             fontWeight: FontWeight.normal),
@@ -67,13 +66,11 @@ ThemeData lightTheme(BuildContext context) {
         labelStyle: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 16,
-            height: 0.08,
             letterSpacing: -0.40,
             fontWeight: FontWeight.normal),
         unselectedLabelStyle: TextStyle(
             fontFamily: 'SFProText',
             fontSize: 16,
-            height: 0.08,
             letterSpacing: -0.40,
             fontWeight: FontWeight.normal),
       ));

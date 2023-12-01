@@ -18,13 +18,11 @@ class _MyProfilePageState extends State<ProfilePage> {
       children: const [
         ProfileItemTitle(
             title: 'У вас подключено',
-            subtitle: 'Подписки, автоплатежи и ',
-            subtitle2: 'сервисы на которые вы подписались'),
+            subtitle: 'Подписки, автоплатежи и сервисы на которые вы подписались'),
         HorizontalCategoriesList(),
         ProfileItemTitle(
           title: 'Тарифы и лимиты',
           subtitle: 'Для операций в Сбербанк Онлайн',
-          subtitle2: '',
         ),
         ActionItem(
             actionModel: ActionModel(
