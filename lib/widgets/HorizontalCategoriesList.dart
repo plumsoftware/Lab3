@@ -3,37 +3,24 @@ import 'package:lab3/models/CategoryModel.dart';
 import 'package:lab3/widgets/CategoryItem.dart';
 
 class HorizontalCategoriesList extends StatelessWidget {
-  const HorizontalCategoriesList({super.key});
+  const HorizontalCategoriesList({super.key, required this.list});
+
+  final List<CategoryModel> list;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
-      height: 220,
-      child: ListView.builder(
+      height: 180,
+      child: ListView.separated(
         padding: const EdgeInsets.all(16),
         scrollDirection: Axis.horizontal,
-        itemCount: 1,
+        itemCount: 2,
         itemBuilder: (context, index) {
-          return const Row(
-            children: [
-              CategoryItem(
-                  categoryModel: CategoryModel(
-                      imageName: 'lib/assets/images/sber_prime.png',
-                      title: 'СберПрайм',
-                      subtitle: 'Платёж 9 июля',
-                      cost: '199 ₽',
-                      period: 'месяц')),
-              SizedBox(width: 16),
-              CategoryItem(
-                  categoryModel: CategoryModel(
-                      imageName: 'lib/assets/images/transfer.png',
-                      title: 'Переводы',
-                      subtitle: 'Автопродление 21 августа',
-                      cost: '199 ₽',
-                      period: 'месяц')),
-            ],
-          );
+          return CategoryItem(categoryModel: list[index]);
+        },
+        separatorBuilder: (BuildContext context, int index) {
+          return const SizedBox(width: 16);
         },
       ),
     );

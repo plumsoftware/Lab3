@@ -13,7 +13,7 @@ ThemeData lightTheme(BuildContext context) {
         backgroundColor: Colors.white,
       ),
       chipTheme: ChipThemeData(
-        selectedColor: AppColors.chipBackground,
+        selectedColor: AppColors.selectedChipBackground,
         checkmarkColor: Colors.black,
         backgroundColor: AppColors.chipBackground,
         shape: RoundedRectangleBorder(

@@ -11,7 +11,8 @@ class CategoryItem extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {},
       style: ElevatedButton.styleFrom(
-          elevation: 20,
+          padding: const EdgeInsets.all(16),
+          elevation: 10,
           backgroundColor: Colors.white,
           primary: Colors.white,
           surfaceTintColor: Colors.white,
@@ -19,47 +20,44 @@ class CategoryItem extends StatelessWidget {
           shadowColor: Colors.black.withAlpha(70),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-      child: Padding(
-        padding: const EdgeInsets.all(14),
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    categoryModel.imageName,
-                    width: 36,
-                    height: 36,
-                  ),
-                  const SizedBox(
-                    width: 16,
-                  ),
-                  Text(
-                    categoryModel.title,
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  )
-                ],
-              ),
-              const SizedBox(height: 18),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    categoryModel.subtitle,
-                    style: Theme.of(context).textTheme.titleMedium,
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    '${categoryModel.cost} в ${categoryModel.period}',
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
-                ],
-              ),
-            ]),
-      ),
+      child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset(
+                  categoryModel.imageName,
+                  width: 36,
+                  height: 36,
+                ),
+                const SizedBox(
+                  width: 16,
+                ),
+                Text(
+                  categoryModel.title,
+                  style: Theme.of(context).textTheme.bodyMedium,
+                )
+              ],
+            ),
+            const SizedBox(height: 8),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  categoryModel.subtitle,
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  '${categoryModel.cost} в ${categoryModel.period}',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ],
+            ),
+          ]),
     );
   }
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lab3/models/ChipModel.dart';
 
 class Chips extends StatefulWidget {
   Chips({super.key, required this.items});

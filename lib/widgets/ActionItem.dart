@@ -17,6 +17,7 @@ class ActionItem extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         surfaceTintColor: Colors.transparent,
+        shadowColor: Colors.transparent,
       ),
       onPressed: () {},
       child: Row(
@@ -63,10 +64,9 @@ class ActionItem extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          IconButton(
-            icon: const Icon(Icons.arrow_forward_ios_rounded),
+          const Icon(
+            Icons.arrow_forward_ios_rounded,
             color: AppColors.subtitle,
-            onPressed: () {},
           ),
         ],
       ),

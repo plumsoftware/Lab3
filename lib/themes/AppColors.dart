@@ -6,6 +6,7 @@ class AppColors {
   //region::Widgets
   static const Color mainBackground = Color(0xFFFAFAFA);
   static const Color chipBackground = Color(0x14000000);
+  static const Color selectedChipBackground = Color.fromARGB(100, 8, 166, 82);
   static const Color tabBarIndicator = Color(0xFF068441);
   static const Color tabBarBackground = Colors.white;
   static const Color tabBarDivider = Colors.transparent;
