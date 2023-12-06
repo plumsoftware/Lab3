@@ -1,16 +1,21 @@
 # lab3
 
-A new Flutter project for lab #3
+A Flutter project for lab #3
 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+##Screenshots
+_Portrait_
+![screenshot #1](https://github.com/plumsoftware/Lab3/blob/develop/lib/assets/images/image1.jpg)
+![screenshot #2](https://github.com/plumsoftware/Lab3/blob/develop/lib/assets/images/image2.jpg)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+_Landscape_
+![screenshot #3](https://github.com/plumsoftware/Lab3/blob/develop/lib/assets/images/image3.jpg)
+![screenshot #4](https://github.com/plumsoftware/Lab3/blob/develop/lib/assets/images/image4.jpg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##Version
+```sh
+flutter version 3.16.0
+```
